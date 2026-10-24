@@ -1,0 +1,30 @@
+*{box-sizing:border-box;margin:0}
+body{background:#fafafa;color:#000;font:400 14px/1.5 Inter,Helvetica,Arial,sans-serif;letter-spacing:.01em}
+header{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:6px 28px 4px;background:#fafafa;border-bottom:2px solid #222;z-index:10}
+.logo{font-family:Archivo,Helvetica,Arial,sans-serif;font-stretch:125%;font-weight:900;font-size:21px;letter-spacing:.02em;color:#000;text-decoration:none}
+nav{display:flex;gap:28px}
+nav a{color:#000;text-decoration:none;font-size:14px;text-transform:uppercase;padding-bottom:1px;border-bottom:2px solid transparent}
+nav a.active{border-bottom-color:#000}
+.page{display:none;min-height:calc(100vh - 44px);padding:28px}
+.page.show{display:block}
+.label{font-size:12px;text-transform:uppercase;opacity:.5}
+
+.empty a{color:inherit}
+@media(max-width:560px){header{padding:6px 16px 4px}nav{gap:14px}nav a{font-size:12px}.logo{font-size:17px}.page{padding:20px 16px}}
+.wrap{max-width:900px;margin:0 auto;padding-top:24px}.wrap.narrow{max-width:640px}
+.page{min-height:calc(100vh - 44px)}
+.label{margin-bottom:18px}
+h1{font:900 clamp(28px,5vw,44px)/1.05 Archivo,Helvetica,sans-serif;font-stretch:125%;margin-bottom:8px}
+h2{font:900 clamp(18px,3vw,24px)/1.15 Archivo,Helvetica,sans-serif;font-stretch:125%;margin-bottom:6px}
+h3{font-size:12px;text-transform:uppercase;opacity:.5;font-weight:500;margin:36px 0 10px}
+p{margin-bottom:14px;max-width:62ch}.lead{font-size:20px;font-weight:500;line-height:1.35}
+.meta{opacity:.6;margin-bottom:16px}.meta a,.page a{color:#000}
+.embed{margin:14px 0}
+.feature{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:28px;align-items:start;margin-bottom:48px}
+.feature.slim{grid-template-columns:1fr}.feature img{width:100%;height:auto;display:block}
+.list{list-style:none;padding:0;border-top:1px solid #222}
+.list li{border-bottom:1px solid #ddd}.list a{display:flex;justify-content:space-between;gap:16px;padding:10px 0;text-decoration:none}
+.list em{font-style:normal;opacity:.5;text-align:right}
+@media(max-width:700px){.feature{grid-template-columns:1fr}.list a{flex-direction:column;gap:0}.list em{text-align:left}}
+.btn a{display:inline-block;border:2px solid #000;padding:10px 16px;text-decoration:none;font-weight:500}
+.btn a:hover{background:#000;color:#fafafa}
